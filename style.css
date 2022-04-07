@@ -172,7 +172,7 @@
 }
 
 
-@media (min-width: 320px){
+@media (min-width: 270px){
 
     #dvforca{
         width: 100%;
@@ -240,6 +240,7 @@
 }
 
 .letraJ{
+    display: none;
     width: 25px;
     height: 25px;
     
@@ -257,7 +258,9 @@
 
 
 
-@media (min-width: 425px){
+@media (min-width: 768px){
+
+
 
     #dvforca{
         width: 100%;
@@ -325,6 +328,7 @@
 }
 
 .letraJ{
+    display: block;
     width: 25px;
     height: 25px;
     
@@ -339,7 +343,7 @@
     
 }
 
-@media (min-width: 768px){
+@media (min-width: 900px){
 
     #dvmsg{
         font-size: 3rem;
