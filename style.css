@@ -206,15 +206,15 @@
         display: flex;
         justify-content: center;
         align-items: center;        
-        background-color: rgb(12, 12, 184);
+        background-color: rgb(5, 57, 34);
         color:white;
-        font-size: 1rem;
-        height: 1.9rem;
+        font-size: 0.5rem;
+        height: 1.1rem;
         padding: 0;
         margin: 2px 2px 2px 2px;
         box-shadow: 3px 3px 0.4 black;
         cursor: pointer;
-        border-radius: 90%;
+        border-radius: 50%;
     }
 
     .tecla:hover{
@@ -244,6 +244,10 @@
     width: 25px;
     height: 25px;
     
+}
+
+#topoJ button{
+    font-size: 1rem;
 }
 
 #meioJ{
