@@ -32,7 +32,7 @@ let biblioteca=[
         sobre:"O mais bonito"
     },
     jogador9={
-        nome:"Pretinha",
+        nome:"pretinha",
         sobre:"Gata traumatizada"
     }
 
@@ -127,14 +127,14 @@ function jogar(){
                         document.getElementById('dvmsg').innerHTML="Perdeu"                        
                         jogando=false
 
-                        letraDica.style.display='none'
+                       // letraDica.style.display='none'
                         
                     }
                 }
                 if(acertos==tam){
                 document.getElementById('dvmsg').innerHTML="Ganhou"                
                 jogando=false
-                letraDica.style.display='none'
+               // letraDica.style.display='none'
                 }
             }
         }
