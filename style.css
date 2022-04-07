@@ -3,7 +3,7 @@
 
 *{
     margin:0;
-    border-radius: none;
+    box-sizing: border-box;
     font-family: 'Rubik Wet Paint', cursive;
 
 }
@@ -196,7 +196,7 @@
 
     .linha{
         border:none;
-        height: 40px;
+        height: 30px;
         margin-bottom: 2px;
     }
 
@@ -208,14 +208,18 @@
         align-items: center;        
         background-color: rgb(5, 57, 34);
         color:white;
-        font-size: 0.5rem;
-        height: 1.1rem;
-        padding: 0;
+       
+        height: 1.3rem;
+        border
         margin: 2px 2px 2px 2px;
         box-shadow: 3px 3px 0.4 black;
         cursor: pointer;
         border-radius: 50%;
     }
+
+    
+
+    
 
     .tecla:hover{
         transform: scale(1.3);
