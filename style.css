@@ -36,17 +36,19 @@
 }
 
 .letra{
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
     text-transform: uppercase;
     text-align: center;
-    margin: 5px;
+    margin: 2px;
     display:none;
     border-color: white;
     border-top: none;
     border-left: none;
     border-right: none;
-    background-color: rgb(157, 143, 241);
+    background-color: rgb(182, 172, 240);
 }
 
 .letraJ{
@@ -90,10 +92,11 @@
 }
 .tecla{
     font-family: 'Times New Roman', Times, serif;
-    border:1px solid black;
+    border:none;
     padding: 2px;
-    width: 50px;
-    height: 50px;
+    width: 2rem;
+    height: 2rem;
+    color: black
 
 }
 
@@ -172,7 +175,7 @@
 }
 
 
-@media (min-width: 270px){
+@media (min-width: 100px){
 
     #dvforca{
         width: 100%;
@@ -196,8 +199,8 @@
 
     .linha{
         border:none;
-        height: 30px;
-        margin-bottom: 2px;
+        height: 27px;
+        margin-bottom: 1px;
     }
 
     
@@ -208,17 +211,17 @@
         align-items: center;        
         background-color: rgb(5, 57, 34);
         color:white;
-       
+       font-size: 1rem;
         height: 1.3rem;
-        border
-        margin: 2px 2px 2px 2px;
+        border:none;
+        margin: 1px 1px 1px 1px;
         box-shadow: 3px 3px 0.4 black;
         cursor: pointer;
-        border-radius: 50%;
+        border-radius: 20%;
     }
 
     
-
+    
     
 
     .tecla:hover{
@@ -231,10 +234,16 @@
         font-size: 1.5rem;
     }
     
-    #controlesJogador button{ 
+    #topoJ button{ 
         font-size: 1.5rem;
-        padding: 0.2rem;
+        padding: 0;
     }
+
+    #dvmsg{
+        font-size: 1rem;
+    }
+
+
 
 .letra{
     width: 25px;
@@ -261,7 +270,7 @@
     font-size: 0.5rem;
 }
     
-}
+
 
 
 @media (min-width: 600px){

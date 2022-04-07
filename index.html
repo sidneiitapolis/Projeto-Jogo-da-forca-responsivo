@@ -52,6 +52,7 @@ rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCE
             <input type="text" id="letraJ"  class="letraJ" maxlength="1" onkeyup="jogar()">
             <button class="btn btn-success" onclick="dica()">Dica</button>
             <button class="btn btn-primary btn-lg btn-block" id="btnNovaPalavra" onclick="inicia()">Nova Palavra</button>
+            <div id="dvmsg"></div>
         </div>  
         <div id="teclado">
             <div id="linha1" class="linha">  
@@ -74,14 +75,14 @@ rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCE
                 <button class="tecla" id="teclaM" onclick="addTecla('m')">M</button>
                 <button class="tecla" id="teclaN" onclick="addTecla('n')">N</button>
                 <button class="tecla" id="teclaO" onclick="addTecla('o')">O</button>
-                <button class="tecla" id="teclaP" onclick="addTecla('w')">P</button>
+                <button class="tecla" id="teclaP" onclick="addTecla('p')">P</button>
                 <button class="tecla" id="teclaQ" onclick="addTecla('q')">Q</button>
                 <button class="tecla" id="teclaR" onclick="addTecla('r')">R</button>
             </div>  
             <div id="linha3" class="linha">  
                 
                 
-                <button class="tecla" id="teclaW" onclick="addTecla('k')">W</button>
+                <button class="tecla" id="teclaW" onclick="addTecla('w')">W</button>
                 <button class="tecla" id="teclaS" onclick="addTecla('s')">S</button>
                 <button class="tecla" id="teclaT" onclick="addTecla('t')">T</button>
                 <button class="tecla" id="teclaU" onclick="addTecla('u')">U</button>
@@ -102,8 +103,9 @@ rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCE
         <div id="baseJ">   
             <!--<div>
                 <button class="btn btn-primary btn-lg btn-block" id="btnNovaPalavra" onclick="inicia()">Nova Palavra</button>
-            </div>-->
+           
             <div id="dvmsg"></div>
+             </div>-->
         </div>      
     </div>
      
