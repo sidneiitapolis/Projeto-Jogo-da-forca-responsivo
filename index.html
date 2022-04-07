@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>Jogo da Forca</title>
+</head>
+<body>
+<div id="principal">  
+    
+    <div id="dvforca">
+       
+
+                
+              
+    </div>
+    
+    <div id="dvPalavra" class="dvdisplay">
+        <input type="text" id="letra0" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra1" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra2" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra3" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra4" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra5" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra6" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra7" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra8" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra9" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra10" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra11" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra12" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra12" class="letra" maxlength="1" readonly=“true” >
+        <input type="text" id="letra12" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra12" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra13" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra14" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra15" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra16" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra17" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra18" class="letra" maxlength="1" readonly=“true”>
+        <input type="text" id="letra19" class="letra" maxlength="1" readonly=“true”>
+    </div>
+
+    <div id="controlesJogador">
+        <div id="topoJ">
+            <input type="text" id="letraJ"  class="letraJ" maxlength="1" onkeyup="jogar()">
+            <button class="btn btn-success" onclick="dica()">Dica</button>
+        </div>  
+        <div id="teclado">
+            <div id="linha1" class="linha">  
+                <button class="tecla" id="teclaA" onclick="addTecla('a')">A</button>
+                <button class="tecla" id="teclaB" onclick="addTecla('b')">B</button>
+                <button class="tecla" id="teclaC" onclick="addTecla('c')">C</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('d')">D</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('e')">E</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('f')">F</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('g')">G</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('h')">H</button>
+                <button class="tecla" id="teclaA" onclick="addTecla('i')">I</button>
+                
+            </div>  
+            <div id="linha2" class="linha">  
+               
+                <button class="tecla" id="teclaB" onclick="addTecla('j')">J</button>
+                <button class="tecla" id="teclaC" onclick="addTecla('k')">K</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('l')">L</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('m')">M</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('n')">N</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('o')">O</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('w')">P</button>
+                <button class="tecla" id="teclaA" onclick="addTecla('q')">Q</button>
+                <button class="tecla" id="teclaB" onclick="addTecla('r')">R</button>
+            </div>  
+            <div id="linha3" class="linha">  
+                
+                
+                <button class="tecla" id="teclaD" onclick="addTecla('k')">W</button>
+                <button class="tecla" id="teclaC" onclick="addTecla('s')">S</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('t')">T</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('u')">U</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('v')">V</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('x')">X</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('y')">Y</button>
+                <button class="tecla" id="teclaA" onclick="addTecla('z')">Z</button>
+                <button class="tecla" id="teclaD" onclick="addTecla('')"></button>
+            </div>  
+        </div>
+
+
+         <div id="meioJ" >
+            <p id="parJ">Letras Digitadas :  </p>
+            <div id="dvletrasdigitadas"></div><br>
+            
+        </div> 
+        <div id="baseJ">   
+            <div>
+                <button class="btn btn-primary btn-lg btn-block" id="btnNovaPalavra" onclick="inicia()">Nova Palavra</button>
+            </div>
+            <div id="dvmsg"></div>
+        </div>      
+    </div>
+     
+       
+</div>     
+<script src="script.js"></script>   
+</body>
+</html>
